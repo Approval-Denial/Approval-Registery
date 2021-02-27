@@ -17,7 +17,7 @@ exports.run = async (client, message, args) => {
     if (!message.member.roles.cache.has(app.Kayıt_Roller.Reg_rol) && !message.member.hasPermission("ADMINISTRATOR"))  return message.react(app.emoji.red)          
     let member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
     let data = kdb.get(`isimler.${member.id}`);
-    if (!data) return message.channel.send(approvemb('Kayıt Geçmişi Bulunamadı.')).then(x => x.delete({timeout: 10000}));
+    if (!data) return message.channel.send(approvemb.setDescription('Kayıt Geçmişi Bulunamadı.')).then(x => x.delete({timeout: 10000}));
     let listedData = data.length > 0 ? data.map((value, index) => `\`${new Date(value.Zaman).toTurkishFormatDate()}\` tarihinde \`${index + 1}.\` İşlemi yapılmıştır. \n\n • İsmi [\`${value.isim_yas}\`] \n • Kaydı Yapan ${message.guild.members.cache.has(value.yetkili) ? message.guild.members.cache.get(value.yetkili) : "Bulunamadı."}\n • İşlem **${value.komut}** \n`) : "Bu Üyenin İsim Geçmişi Bulunamadı.";  
       message.channel.send(approvemb.setDescription(`${listedData.join("\n")}`)).then(x => x.delete({timeout: 20000}));
 
