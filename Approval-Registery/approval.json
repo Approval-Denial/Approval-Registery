@@ -1,0 +1,50 @@
+{
+    "sunucu_ayarlar" : {
+        "ototag": true,
+        "welcome": true,
+        "taglı_alım": false
+     
+    },
+    "sunucu":{
+        "tag":"❈",
+        "tagsız":"•",
+        "bot_voice":"813097333088714818",
+        "fakegün":5
+    },
+"log": {
+"ototag_log":"814561252566761534"
+},
+"embed" : {
+    "footer":"Dєnîαl. ❤️ Approval."
+},
+"kayıt":{
+    "Join_Left":"814555196814262322",
+    "HG_Kanal":"813097332173176859",
+    "Fake_log":"814555258319142922"
+},
+"Kayıt_Roller":{
+    "Erkek":["813097332039876618","813097332039876620"],
+    "Kız":["813097332039876619","813097332039876621"],
+    "Kayıtsız":["813097332039876622"],
+    "bot":["813097332119044146"],
+    "Reg_rol":["813097332119044152"],
+    "karantina":["813097332073168964"],
+    "Vip":"813097332098596882",
+    "Booster":"813097332119044150"
+},
+"bot":{
+    "activity":"Dєnîαl. ❤️ Approval.",
+    
+    "durum":"invisible" 
+    
+},
+"emoji_sayi" : {
+    "emoji1": false,
+    "emoji2": false,
+    "emoji3": true
+},
+"emoji":{
+    "onay":"814623001630605352",
+    "red":"814623000706940959"
+}
+}
